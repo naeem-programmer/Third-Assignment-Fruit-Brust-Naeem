@@ -45,18 +45,21 @@
 
     <header>
 
-        <!-- This is Navbar Section ( Start ) - Bonus Mark Part I Complete for hamburger menu icon For Mobile Device -->
+        <!-- This is Navbar Section ( Start ) - Bonus Mark Part I Complete for hamburger menu icon For Responsive Mobile Device As Per Gias Uddin Brother Instruction (I Complete For Bonus Mark)-->
 
-        <nav class="max-w-screen-xl mx-auto sm:bg-[#FFF] lg:bg-[#F85559] p-8 rounded-full">
-            <div class="flex items-center justify-between">
+        <nav class="my-8">
+            <div
+                class="navbar max-w-screen-xl mx-auto flex justify-between  sm:bg-[#FFF] lg:bg-[#F85559] lg:p-8 rounded-full">
 
-                <!-- Right side Menus options for larger screens -->
-                <ul class="hidden lg:flex gap-7">
-                    <li><a href="#" class="text-white text-lg">Home</a></li>
-                    <li><a href="#" class="text-white text-lg">About Us</a></li>
-                    <li><a href="#" class="text-white text-lg">Shop</a></li>
-                    <li><a href="#" class="text-white text-lg">All Fruits</a></li>
-                </ul>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a class="sm:text-black lg:text-white">Home</a></li>
+                        <li><a class="sm:text-black lg:text-white">About Us</a></li>
+                        <li><a class="sm:text-black lg:text-white">Shop</a></li>
+                        <li><a class="sm:text-black lg:text-white">All Fruits</a></li>
+                    </ul>
+                </div>
+
 
                 <!-- Centered text and logo For Fruit Burst Line -->
 
@@ -65,9 +68,28 @@
                     <h1 class=" sm:text-black lg:text-white text-4xl font-bold">Fruit Burst </h1>
                 </div>
 
+                <!-- Dropdown Menu Bar For Responsive Mobile Device As Per Gias Uddin Brother Instruction -->
 
-                <!-- Search bar and icon -->
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-auto" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-base">
+                        <li><a class="sm:text-black lg:text-white">Home</a></li>
+                        <li><a class="sm:text-black lg:text-white">About Us</a></li>
+                        <li><a class="sm:text-black lg:text-white">Shop</a></li>
+                        <li><a class="sm:text-black lg:text-white">All Fruits</a></li>
+                    </ul>
 
+
+                    <!-- Search bar and icon -->
+
+                </div>
                 <div class="relative hidden lg:block">
                     <input type="text" placeholder="Search here"
                         class="py-4 pl-6 bg-white rounded-full focus:outline-none px-16 w-auto">
@@ -77,23 +99,118 @@
                         </button>
                     </span>
                 </div>
-
-                <!-- Hamburger menu icon for Responsive mobile Device- Mobile L-425px - ( Bonus Mark As Per Gias Uddin Brother Instruction) -->
-
-                <div class=" sm:items-end lg:hidden ">
-                    <button class="lg:text-white sm:text-black sm:px-5 text-xl">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-
             </div>
         </nav>
 
         <!-- End Navbar Section -->
 
 
-
         <!-- This is Banner Section ( Start ) -->
+
+        <section class="max-w-screen-xl mx-auto">
+
+            <div class="carousel w-full my-6 ">
+
+                <!-- Slide 1 -->
+
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <div class="overlay w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+
+                    <img src="./images/banner1.png" class="w-full" />
+
+                    <!-- This Is Heading Paragraph & Button For Banner Section -->
+
+                    <div class="absolute w-full h-full flex flex-col justify-center items-center">
+                        <h2 class="text-white sm:text-3xl lg:text-7xl font-bold text-center sm:mb-1 lg:mb-4">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-white sm:text-sm lg:text-xl text-center sm:mb-2 lg:mb-4">We supply highly quality organic products</p>
+                        <a href="#" class="bg-[#F85559] text-white mt-2 px-6 py-3 rounded-lg text-xl font-semibold">Button</a>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="text-white ">❮</a>
+                        <a href="#slide2" class="text-white ">❯</a>
+                    </div>
+                </div>
+
+
+                <!-- Slide 2 -->
+
+                <div id="slide2" class="carousel-item relative w-full">
+
+                    <div class="overlay w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+
+                    <img src="./images/banner2.png" class="w-full" />
+
+                    <!-- This Is Heading Paragraph & Button For Banner Section -->
+
+                    <div class="absolute w-full h-full flex flex-col justify-center items-center">
+                        <h2 class="text-white sm:text-3xl lg:text-7xl font-bold text-center sm:mb-1 lg:mb-4">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-white sm:text-sm lg:text-xl text-center sm:mb-2 lg:mb-4">We supply highly quality organic products</p>
+                        <a href="#" class="bg-[#F85559] text-white mt-2 px-6 py-3 rounded-lg text-xl font-semibold">Button</a>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="text-white ">❮</a>
+                        <a href="#slide3" class="text-white ">❯</a>
+                    </div>
+                </div>
+
+
+                <!-- Slide 3 -->
+
+                <div id="slide3" class="carousel-item relative w-full">
+
+                    <div class="overlay w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+
+                    <img src="./images/banner3.png" class="w-full" />
+
+                    <!-- This Is Heading Paragraph & Button For Banner Section -->
+
+                    <div class="absolute w-full h-full flex flex-col justify-center items-center">
+                        <h2 class="text-white sm:text-3xl lg:text-7xl font-bold text-center sm:mb-1 lg:mb-4">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-white sm:text-sm lg:text-xl text-center sm:mb-2 lg:mb-4">We supply highly quality organic products</p>
+                        <a href="#" class="bg-[#F85559] text-white mt-2 px-6 py-3 rounded-lg text-xl font-semibold">Button</a>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="text-white ">❮</a>
+                        <a href="#slide4" class="text-white ">❯</a>
+                    </div>
+                </div>
+
+
+                <!-- Slide 4 -->
+
+                <div id="slide4" class="carousel-item relative w-full">
+
+                    <div class="overlay w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+
+                    <img src="./images/banner4.png" class="w-full" />
+
+                    <!-- This Is Heading Paragraph & Button For Banner Section -->
+
+                    <div class="absolute w-full h-full flex flex-col justify-center items-center">
+                        <h2 class="text-white sm:text-3xl lg:text-7xl font-bold text-center sm:mb-1 lg:mb-4">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-white sm:text-sm lg:text-xl text-center sm:mb-2 lg:mb-4">We supply highly quality organic products</p>
+                        <a href="#" class="bg-[#F85559] text-white mt-2 px-6 py-3 rounded-lg text-xl font-semibold">Button</a>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="text-white ">❮</a>
+                        <a href="#slide1" class="text-white ">❯</a>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Banner Section End -->
+
+        
 
 
 
@@ -102,6 +219,8 @@
     <!-- This is Main Section -->
 
     <main>
+
+
 
 
 

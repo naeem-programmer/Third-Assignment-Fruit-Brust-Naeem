@@ -1,6 +1,15 @@
 /* This Is Google Font ( Lato ) Style For My Website */
 
-body{
+body {
 
     font-family: 'Lato', sans-serif;
+}
+
+/* As Per Giud Uddin Brother instruction Only I Can use Few Style If Require Which is 5% out Of 100% */
+
+/* This Style I use For Only Banner Image Overlay */
+
+.overlay{
+
+    opacity: 0.55;
 }
